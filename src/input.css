@@ -911,9 +911,15 @@
     align-items: start;
     padding: 12px;
     border-radius: 16px;
+    transition: background-color 160ms ease;
   }
 
   .course-card.is-highlighted {
+    background: transparent;
+  }
+
+  .course-card:hover,
+  .course-card:focus-within {
     background: var(--panel-soft);
   }
 
