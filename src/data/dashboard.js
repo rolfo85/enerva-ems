@@ -1,7 +1,9 @@
+const withBase = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 export const assets = {
-  newsImage: "/assets/news-image.png",
-  avatarImage: "/assets/avatar-image.png",
-  brandLogo: "/assets/enerva-logo.png",
+  newsImage: withBase("assets/news-image.png"),
+  avatarImage: withBase("assets/avatar-image.png"),
+  brandLogo: withBase("assets/enerva-logo.png"),
 };
 
 export const educationImages = [
